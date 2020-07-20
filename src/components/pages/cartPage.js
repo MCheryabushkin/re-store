@@ -5,7 +5,6 @@ const CartPage = () => {
   return (
     <div>
       <h1>CartPage</h1>
-      <Link to="/">Home</Link>
     </div>
   );
 };
