@@ -11,4 +11,11 @@ const bookRequested = () => {
   }
 }
 
-export { booksLoaded, bookRequested };
+const booksError = (error) => {
+  return {
+    type: "BOOKS_ERROR",
+    payload: error
+  }
+}
+
+export { booksLoaded, bookRequested, booksError };

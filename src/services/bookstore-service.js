@@ -17,8 +17,11 @@ export default class BookStoreService {
   ];
 
   getBooks() {
-    return new Promise((resolve) => {
-      setTimeout(() => resolve(this.books), 700)
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        return resolve(this.books)
+        // return reject(new Error("Somthing bad happend"))
+      }, 700)
     })
   }
 }
